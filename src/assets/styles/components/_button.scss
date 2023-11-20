@@ -1,0 +1,62 @@
+.button{
+    font-size: 2rem;
+    text-shadow: black 1px 0 5px;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    
+    &--icon{
+        padding: 0.25rem;
+        background-size: contain;
+        background-image: url(/src/assets/images/scribble-icon.png);
+    }
+
+    &--bigger{
+        width: 3rem;
+    }
+
+    &--pink{
+        background-size: contain;
+        background-image: url(/src/assets/images/pink1.png);
+
+        &:hover{
+            background-image: url(/src/assets/images/pink1-2.png);
+        }
+    }
+
+    &--yellow{
+        background-size: contain;
+        background-image: url(/src/assets/images/yellow1.png);
+
+        &:hover{
+            background-image: url(/src/assets/images/yellow1-2.png);
+        }
+    }
+
+    &--green{
+        background-size: contain;
+        background-image: url(/src/assets/images/green1.png);
+
+        &:hover{
+            background-image: url(/src/assets/images/green1-2.png);
+        }
+    }
+}
+
+.button-labeled {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    gap: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray;
+    font-size: 1.5rem; 
+
+    &:hover{
+        background-image: url(/src/assets/images/scribble1.png);
+    }
+}

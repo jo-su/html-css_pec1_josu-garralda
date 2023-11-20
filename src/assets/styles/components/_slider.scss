@@ -1,0 +1,18 @@
+.slider{
+    position: relative;
+    
+    &__button{
+        position: absolute;
+        bottom: 50%;
+
+        &--next{
+            right: -2.5rem;
+        }
+    
+        &--prev{
+            left: -2.5rem;
+        }
+
+    }
+    
+}

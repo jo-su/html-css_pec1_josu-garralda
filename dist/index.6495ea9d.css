@@ -1,0 +1,596 @@
+@import "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: DM Serif Display, serif;
+}
+
+body {
+  color: #fdfdfd;
+  max-width: 80vw, 1500px;
+  background-color: #0e0f10;
+  margin: auto;
+}
+
+a {
+  color: #fdfdfd;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.feather {
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+video {
+  border-radius: 1rem;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+hr {
+  color: #96969633;
+  margin: 1rem 0;
+}
+
+.header {
+  z-index: 100;
+  text-shadow: 1px 0 5px #000;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (width >= 768px) {
+  .header {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .header {
+    align-items: center;
+  }
+}
+
+.header_logo {
+  z-index: 300;
+  background-image: url("scribble1-2.165df707.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: min(1.5rem + 6vw, 5rem);
+  line-height: min(1.5rem + 6vw, 5rem);
+}
+
+.header_logo:hover {
+  background-image: url("scribble1.82f44e80.png");
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  padding: 2rem;
+}
+
+@media screen and (width >= 576px) {
+  .footer {
+    margin-bottom: 0;
+  }
+}
+
+.footer_left {
+  z-index: 400;
+  width: calc(4rem + 3vw);
+  max-width: 7rem;
+  height: auto;
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+}
+
+@media screen and (width >= 768px) {
+  .footer_left {
+    left: 1rem;
+  }
+}
+
+.footer_right {
+  z-index: 400;
+  width: calc(4rem + 5vw);
+  height: auto;
+  position: fixed;
+  bottom: 1rem;
+  right: .4rem;
+}
+
+.main {
+  max-width: 85vw;
+  margin: auto;
+}
+
+.main_title {
+  text-shadow: 1px 0 5px #000;
+  z-index: 10;
+  padding: 0 0 1rem 1rem;
+  font-size: 3rem;
+  position: sticky;
+  top: 4rem;
+}
+
+@media screen and (width >= 576px) {
+  .main_title {
+    top: 4.5rem;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .main_title {
+    top: 5rem;
+  }
+}
+
+.nav {
+  flex-direction: row;
+  gap: 1rem;
+  padding: .5rem;
+  display: flex;
+}
+
+@media screen and (width >= 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .nav {
+    flex-direction: row;
+  }
+}
+
+.nav__mobile {
+  z-index: 300;
+  display: block;
+  position: relative;
+}
+
+@media screen and (width >= 768px) {
+  .nav__mobile {
+    display: none;
+  }
+}
+
+.nav__desktop {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .nav__desktop {
+    display: block;
+  }
+}
+
+.nav__full {
+  z-index: 200;
+  flex-direction: column;
+  align-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav__full--hidden {
+  visibility: hidden;
+  z-index: -200;
+}
+
+.episodes {
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+  gap: 2rem;
+  display: grid;
+}
+
+@media screen and (width >= 768px) {
+  .episodes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .episodes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.episode-card {
+  padding-left: 7vw;
+  position: relative;
+}
+
+@media screen and (width >= 768px) {
+  .episode-card {
+    padding-left: calc(1rem + 3vw);
+  }
+}
+
+.episode-card_img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 4px #00000029;
+}
+
+.episode-card_number {
+  text-shadow: 1px 0 10px #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: calc(2rem + 15vw);
+  font-weight: bold;
+  line-height: calc(2rem + 15vw);
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
+
+:hover > .episode-card_number {
+  background-image: url("scribble-vertical-long.7b5aff52.png");
+}
+
+@media screen and (width >= 768px) {
+  .episode-card_number {
+    font-size: calc(4rem + 7vw);
+    line-height: calc(4rem + 7vw);
+    left: 1.25rem;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .episode-card_number {
+    font-size: calc(5rem + 5vw);
+    line-height: calc(5rem + 5vw);
+    left: 1.5rem;
+  }
+}
+
+.episode-card_name {
+  text-align: right;
+  text-shadow: 1px 0 10px #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 30%;
+  font-size: 8vw;
+  line-height: 8vw;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+:hover > .episode-card_name {
+  background-image: url("scribble-big.65063fb4.png");
+}
+
+@media screen and (width >= 768px) {
+  .episode-card_name {
+    font-size: calc(.5rem + 3vw);
+    line-height: calc(.5rem + 3vw);
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .episode-card_name {
+    font-size: calc(1rem + 1vw);
+    line-height: calc(1rem + 1vw);
+  }
+}
+
+.episode-detail {
+  overflow: none;
+  border-radius: 1rem;
+  grid-template: "image"
+                 "description"
+                 "duration"
+                 "rating"
+                 "action"
+                 / auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  position: relative;
+}
+
+@media screen and (width >= 576px) {
+  .episode-detail {
+    grid-template: "image image"
+                   "description description"
+                   "duration rating"
+                   "action action"
+                   / 50%;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .episode-detail {
+    grid-template: "image duration"
+                   "image rating"
+                   "description description"
+                   "action action"
+                   / auto 5rem;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .episode-detail {
+    grid-template: "image duration rating" 3rem
+                   "image description description"
+                   "image action action" 4rem
+                   / 65% auto auto;
+  }
+}
+
+.episode-detail__image {
+  grid-area: image;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.episode-detail__description {
+  grid-area: description;
+  justify-content: center;
+  align-items: center;
+  font-family: Taviraj, sans-serif;
+  display: flex;
+}
+
+.episode-detail__duration {
+  grid-area: duration;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.episode-detail__rating {
+  grid-area: rating;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+@media screen and (width >= 768px) {
+  .episode-detail__rating {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .episode-detail__rating {
+    flex-direction: row;
+  }
+}
+
+.episode-detail__action {
+  grid-area: action;
+}
+
+.episode-detail_navigate {
+  text-shadow: 2px 0 10px #000;
+  background-image: url("scribble-number.2167a91e.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+}
+
+.episode-detail_navigate--prev {
+  border-radius: 0 1rem 1rem 0;
+  left: -3rem;
+}
+
+.episode-detail_navigate--next {
+  border-radius: 1rem 0 0 1rem;
+  right: -3rem;
+}
+
+.section {
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.section_title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  font-family: Taviraj, sans-serif;
+  font-size: 1rem;
+}
+
+.button {
+  text-shadow: 1px 0 5px #000;
+  color: #fff;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.button--icon {
+  background-image: url("scribble-icon.a311e632.png");
+  background-size: contain;
+  padding: .25rem;
+}
+
+.button--bigger {
+  width: 3rem;
+}
+
+.button--pink {
+  background-image: url("pink1.a2c5284c.png");
+  background-size: contain;
+}
+
+.button--pink:hover {
+  background-image: url("pink1-2.9fdd62d0.png");
+}
+
+.button--yellow {
+  background-image: url("yellow1.dd95d5ef.png");
+  background-size: contain;
+}
+
+.button--yellow:hover {
+  background-image: url("yellow1-2.9b5c0151.png");
+}
+
+.button--green {
+  background-image: url("green1.54c09082.png");
+  background-size: contain;
+}
+
+.button--green:hover {
+  background-image: url("green1-2.8eca4162.png");
+}
+
+.button-labeled {
+  text-align: center;
+  background-color: #96969633;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.button-labeled:hover {
+  background-image: url("scribble1.82f44e80.png");
+}
+
+.link {
+  color: #fdfdfd;
+}
+
+.link:hover {
+  color: #ef9443;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  bottom: 50%;
+}
+
+.slider__button--next {
+  right: -2.5rem;
+}
+
+.slider__button--prev {
+  left: -2.5rem;
+}
+
+.video {
+  position: relative;
+}
+
+.video__corner-button {
+  position: absolute;
+  top: 2rem;
+  right: -1.5rem;
+}
+
+.card {
+  text-align: center;
+  background-color: #96969633;
+  border-radius: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  display: grid;
+}
+
+.card__image {
+  aspect-ratio: .75;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card__image--horizontal {
+  aspect-ratio: 16 / 9;
+}
+
+.card--opaque {
+  background-color: #181818;
+}
+
+.keen-slider:not([data-keen-slider-disabled]) {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-select: none;
+  align-content: flex-start;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
+  flex-direction: row-reverse;
+}
+
+.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=index.6495ea9d.css.map */

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: $title-font;
+}
+
+body{
+    background-color: $background;
+    color: $white;
+    margin: auto;
+    max-width: 80vw, 1500px;
+}
+
+a{
+    color: $white;
+}
+ul, 
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.feather {
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
+    border-radius: 1rem;
+    display: block;
+}
+
+hr{
+    color: $gray;
+    margin: 1rem 0;
+}
+

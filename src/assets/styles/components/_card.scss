@@ -1,0 +1,26 @@
+.card{
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: $gray;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    
+    &__image{
+        border-radius: 1rem;
+        width: 100%;
+        aspect-ratio: 0.75 / 1;
+        object-fit: cover;
+        object-position: top;
+
+        &--horizontal{
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    &--opaque{
+        background-color: $black;
+    }
+    
+
+}

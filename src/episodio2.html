@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>la Mesías | Episodio 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="main">
+      <h2 class="main_title">Episodio 2</h2>
+      <div class="card episode-detail">
+        <div class="episode-card episode-detail__image">
+          <img class="episode-card_img" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP02_T01_STILL_20220819_DSC4691_sophiekoehler-scaled.jpg">
+            <p class="episode-card_number">2</p>
+            <p class="episode-card_name">Resurrección</p>
+          </img>
+        </div>
+        <p class="episode-detail__description">Irene, la hermana de Enric, vive su anodino día a día hasta que una pintada en la pared de su trabajo pone su mundo patas arriba, haciéndole revivir el pasado que tanto se había esforzado por enterrar.</p>
+        <p class="episode-detail__duration">66'</p>
+        <div class="episode-detail__rating">
+          <i data-feather="star"></i>
+          <i data-feather="star"></i>
+          <i data-feather="star"></i>
+          <i data-feather="star"></i>
+          <p>4</p>
+        </div>
+        <a class="episode-detail__action button button-labeled" href="https://ver.movistarplus.es/ficha/la-mesias-t1/la-mesias-t1/ep-2-resurreccion/" target="_blank">
+          <div class="button button--icon button--bigger">
+            <i data-feather="play"></i>
+          </div>
+          Reproducir episodio
+        </a>
+        <a class="button episode-detail_navigate episode-detail_navigate--prev" href="./episodio1.html">
+          1
+        </a>
+        <a class="button episode-detail_navigate episode-detail_navigate--next" href="./episodio3.html">
+          3
+        </a>
+      </div>
+      <section class="section">
+        <h3 class="section_title">Imágenes</h3>
+        <div class="slider">
+          <div class="keen-slider" id="slider-imagenes">
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_2192_carlaoset-2-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1696_carlaoset-1-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1459_carlaoset-1-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220929__DSC4461_sophiekoehler-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220902_DSC9327_sophiekoehler-scaled.jpg">
+            </div>
+          </div>
+          <button id="slider-imagenes-prev" class="button button--icon slider__button slider__button--prev">
+            <i data-feather="arrow-left"></i>
+          </button>
+          <button id="slider-imagenes-next" class="button button--icon slider__button slider__button--next">
+            <i data-feather="arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

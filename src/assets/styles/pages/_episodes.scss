@@ -1,0 +1,94 @@
+.episodes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    grid-auto-rows: auto;
+
+    @media screen and (min-width: $screen-md-min) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $screen-xl-min) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.episode-card {
+    padding-left: 7vw;
+    position: relative;
+
+    @media screen and (min-width: $screen-md-min) {
+        padding-left: calc(1rem + 3vw);
+    }
+
+    &_img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    &_number{
+        position: absolute;
+        font-weight: bold;
+        bottom: 0rem;
+        left:1rem;
+        font-size: calc(2rem + 15vw);
+        line-height: calc(2rem + 15vw);
+        text-shadow: black 1px 0 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        :hover > & {
+            background-image: url(/src/assets/images/scribble-vertical-long.png);
+        }
+    
+        @media screen and (min-width: $screen-md-min) {
+            font-size: calc(4rem + 7vw);
+            line-height: calc(4rem + 7vw);
+            left:1.25rem;
+        }
+    
+        @media screen and (min-width: $screen-xl-min) {
+            font-size: calc(5rem + 5vw);
+            line-height: calc(5rem + 5vw);
+            left:1.5rem;
+        }
+    }
+
+    &_name{
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        line-height: 8vw;
+        font-size: 8vw;
+        text-align: right;
+        margin-left: 30%;
+        text-shadow: black 1px 0 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        :hover > & {
+            background-image: url(/src/assets/images/scribble-big.png);
+        }
+    
+        @media screen and (min-width: $screen-md-min) {
+            font-size: calc(0.5rem + 3vw);
+            line-height: calc(0.5rem + 3vw);
+        }
+        @media screen and (min-width: $screen-xl-min) {
+            font-size: calc(1rem + 1vw);
+            line-height: calc(1rem + 1vw);
+        }
+    }
+}
+
+
+
+
+
+
+

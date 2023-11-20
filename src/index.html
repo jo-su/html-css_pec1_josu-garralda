@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>la Mesías</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="main">
+      <section class="section">
+        <h2>Honrarás a tu madre</h2>
+        <h2>Cantarás para salvarte</h2>
+        <h2>Conoceras tus demonios</h2>
+        <h2>Ella es el principio y el fin</h2>
+      </section>
+      <div class="video">
+        <video autoplay muted loop id="home-video" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/09/la-mesias-video.mp4?_=1"></video>
+        <button id="home-video-sound" class="button button--icon button--bigger video__corner-button">
+          <i data-feather="volume-2"></i>
+        </button>
+      </div>
+    </main>
+       
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

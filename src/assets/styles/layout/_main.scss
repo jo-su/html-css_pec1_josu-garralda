@@ -1,0 +1,22 @@
+.main{
+
+    max-width: 85vw;
+    margin: auto;
+
+    &_title{
+        position: sticky;
+        text-shadow: black 1px 0 5px;
+        top: 4rem;
+        font-size: 3rem;
+        padding: 0 0 1rem 1rem ;
+        z-index: 10;
+
+        @media screen and (min-width: $screen-sm-min) {
+            top: 4.5rem;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            top: 5rem;
+        }
+    }
+}

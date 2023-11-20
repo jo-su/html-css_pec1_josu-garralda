@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>la Mesías | Episodio 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="main">
+      <h2 class="main_title">Episodio 1</h2>
+      <div class="card episode-detail">
+        <div class="episode-card episode-detail__image">
+          <img class="episode-card_img" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220902_DSC9327_sophiekoehler-scaled.jpg">
+            <p class="episode-card_number">1</p>
+            <p class="episode-card_name">Montserrat</p>
+          </img>
+        </div>
+        <p class="episode-detail__description">Enric, un hombre cerrado en sí mismo, se sobrecoge cuando ve al nuevo grupo de música religiosa que ha sido ridiculizado en todo el país: las Stella Maris. No va a parar hasta encontrarlas y salvarlas de la infancia que él ha vivido.</p>
+        <p class="episode-detail__duration">66'</p>
+        <div class="episode-detail__rating">
+          <i data-feather="star"></i>
+          <i data-feather="star"></i>
+          <i data-feather="star"></i>
+          <i data-feather="star"></i>
+          <p>4</p>
+        </div>
+        <a class="episode-detail__action button button-labeled" href="https://wl.movistarplus.es/ficha/?id=2069503&referrer=api" target="_blank">
+          <div class="button button--icon button--bigger">
+            <i data-feather="play"></i>
+          </div>
+          Reproducir episodio
+        </a>
+        <a class="button episode-detail_navigate episode-detail_navigate--next" href="./episodio2.html">
+          2
+        </a>
+      </div>
+      <section class="section">
+        <h3 class="section_title">Imágenes</h3>
+        <div class="slider">
+          <div class="keen-slider" id="slider-imagenes">
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_2192_carlaoset-2-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1696_carlaoset-1-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1459_carlaoset-1-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220929__DSC4461_sophiekoehler-scaled.jpg">
+            </div>
+            <div class="card keen-slider__slide">
+              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220902_DSC9327_sophiekoehler-scaled.jpg">
+            </div>
+          </div>
+          <button id="slider-imagenes-prev" class="button button--icon slider__button slider__button--prev">
+            <i data-feather="arrow-left"></i>
+          </button>
+          <button id="slider-imagenes-next" class="button button--icon slider__button slider__button--next">
+            <i data-feather="arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

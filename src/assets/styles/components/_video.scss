@@ -1,0 +1,9 @@
+.video{
+    position: relative;
+
+    &__corner-button{
+        position: absolute;
+        right: -1.5rem;
+        top: 2rem;
+    }
+}
