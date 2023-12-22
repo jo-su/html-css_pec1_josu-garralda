@@ -1,0 +1,18 @@
+.polyline_scribble{
+    stroke: $yellow;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards , color_change 1s infinite alternate;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+@keyframes color_change {
+    from { stroke: $yellow; }
+    to { stroke: $pink; }
+}
