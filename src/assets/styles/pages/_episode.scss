@@ -95,7 +95,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        background-image: url(/src/assets/images/scribble-number.png);
+        background-image: image-set(url(/src/assets/images/scribble-number.png?width=30&quality=75) 1x, url(/src/assets/images/scribble-number.png?width=60) 2x);
 
         &--prev{
             left: -3rem;

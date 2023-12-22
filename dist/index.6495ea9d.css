@@ -73,16 +73,32 @@ hr {
 
 .header_logo {
   z-index: 300;
-  background-image: url("scribble1-2.165df707.png");
+  background-image: image-set("scribble1-2.692ced60.png" 1x, "scribble1-2.473891ca.png" 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  font-size: min(1.5rem + 6vw, 5rem);
-  line-height: min(1.5rem + 6vw, 5rem);
+  flex-direction: row;
+  align-items: center;
+  font-size: min(2rem + 3vw, 5rem);
+  line-height: min(2rem + 3vw, 5rem);
+  display: flex;
 }
 
 .header_logo:hover {
-  background-image: url("scribble1.82f44e80.png");
+  background-image: image-set("scribble1.0fd82d60.png" 1x, "scribble1.6f948646.png" 2x);
+}
+
+.logo_svg {
+  fill: #fff;
+  filter: drop-shadow(3px 5px 2px #0006);
+  aspect-ratio: 7 / 10;
+  width: min(1.5rem + 6vw, 4rem);
+}
+
+.logo_title {
+  flex-shrink: 0;
+  font-size: min(2rem + 3vw, 5rem);
+  line-height: min(2rem + 3vw, 5rem);
 }
 
 .footer {
@@ -96,6 +112,13 @@ hr {
   .footer {
     margin-bottom: 0;
   }
+}
+
+.footer_nav {
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 10px;
+  display: flex;
 }
 
 .footer_left {
@@ -146,6 +169,64 @@ hr {
 @media screen and (width >= 768px) {
   .main_title {
     top: 5rem;
+  }
+}
+
+.cross-clip-animation {
+  animation: 10s infinite clip;
+}
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(0 6%, 23% 28%, 2% 0, 96% 0, 79% 27%, 100% 2%, 100% 95%, 78% 78%, 99% 100%, 1% 100%, 21% 75%, 0 99%);
+  }
+
+  16% {
+    clip-path: polygon(0 18%, 27% 27%, 17% 0, 88% 0, 74% 27%, 100% 16%, 100% 81%, 72% 75%, 89% 100%, 11% 100%, 28% 75%, 0 84%);
+  }
+
+  34% {
+    clip-path: polygon(1% 22%, 26% 32%, 25% 0, 77% 0, 74% 30%, 100% 21%, 100% 72%, 75% 71%, 89% 100%, 23% 100%, 27% 66%, 0 73%);
+  }
+
+  50% {
+    clip-path: polygon(0 32%, 26% 32%, 26% 0, 74% 0, 74% 30%, 100% 29%, 100% 70%, 75% 71%, 75% 100%, 26% 100%, 27% 66%, 0 66%);
+  }
+
+  64% {
+    clip-path: polygon(1% 22%, 26% 32%, 25% 0, 77% 0, 74% 30%, 100% 21%, 100% 72%, 75% 71%, 89% 100%, 23% 100%, 27% 66%, 0 73%);
+  }
+
+  82% {
+    clip-path: polygon(0 18%, 27% 27%, 17% 0, 88% 0, 74% 27%, 100% 16%, 100% 81%, 72% 75%, 89% 100%, 11% 100%, 28% 75%, 0 84%);
+  }
+
+  100% {
+    clip-path: polygon(0 6%, 23% 28%, 2% 0, 96% 0, 79% 27%, 100% 2%, 100% 95%, 78% 78%, 99% 100%, 1% 100%, 21% 75%, 0 99%);
+  }
+}
+
+.polyline_scribble {
+  stroke: #bcb245;
+  fill: #0000;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000px;
+  animation: 5s linear forwards dash, 1s infinite alternate color_change;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes color_change {
+  from {
+    stroke: #bcb245;
+  }
+
+  to {
+    stroke: #c64668;
   }
 }
 
@@ -261,7 +342,7 @@ hr {
 }
 
 :hover > .episode-card_number {
-  background-image: url("scribble-vertical-long.7b5aff52.png");
+  background-image: image-set("scribble-vertical-long.0550d987.png" 1x, "scribble-vertical-long.78e3fa93.png" 2x);
 }
 
 @media screen and (width >= 768px) {
@@ -295,7 +376,7 @@ hr {
 }
 
 :hover > .episode-card_name {
-  background-image: url("scribble-big.65063fb4.png");
+  background-image: image-set("scribble-vertical-long.3a2c21a6.png" 1x, "scribble-vertical-long.12297fe5.png" 2x);
 }
 
 @media screen and (width >= 768px) {
@@ -405,7 +486,7 @@ hr {
 
 .episode-detail_navigate {
   text-shadow: 2px 0 10px #000;
-  background-image: url("scribble-number.2167a91e.png");
+  background-image: image-set("scribble-number.fd1a3a2b.png" 1x, "scribble-number.8bdb0bf8.png" 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -452,7 +533,7 @@ hr {
 }
 
 .button--icon {
-  background-image: url("scribble-icon.a311e632.png");
+  background-image: image-set("scribble-icon.161c7fc5.png" 1x, "scribble-icon.fd08c021.png" 2x);
   background-size: contain;
   padding: .25rem;
 }
@@ -462,30 +543,36 @@ hr {
 }
 
 .button--pink {
-  background-image: url("pink1.a2c5284c.png");
+  background-image: image-set("pink1.78736479.png" 1x, "pink1.b5aded9f.png" 2x);
   background-size: contain;
 }
 
 .button--pink:hover {
-  background-image: url("pink1-2.9fdd62d0.png");
+  color: #c64668;
+  background-image: image-set("pink1-2.452f9992.png" 1x, "pink1-2.7b3be0eb.png" 2x);
+  animation: 1s infinite alternate shadow_change;
 }
 
 .button--yellow {
-  background-image: url("yellow1.dd95d5ef.png");
+  background-image: image-set("yellow1.9bd5e230.png" 1x, "yellow1.4067596e.png" 2x);
   background-size: contain;
 }
 
 .button--yellow:hover {
-  background-image: url("yellow1-2.9b5c0151.png");
+  color: #bcb245;
+  background-image: image-set("yellow1-2.54eedf74.png" 1x, "yellow1-2.ffd5f0ea.png" 2x);
+  animation: 1s infinite alternate shadow_change;
 }
 
 .button--green {
-  background-image: url("green1.54c09082.png");
+  background-image: image-set("green1.b2d7a7b2.png" 1x, "green1.b371456b.png" 2x);
   background-size: contain;
 }
 
 .button--green:hover {
-  background-image: url("green1-2.8eca4162.png");
+  color: #2d5d26;
+  background-image: image-set("green1-2.83faa62c.png" 1x, "green1-2.fd342278.png" 2x);
+  animation: 1s infinite alternate shadow_change;
 }
 
 .button-labeled {
@@ -501,15 +588,62 @@ hr {
 }
 
 .button-labeled:hover {
-  background-image: url("scribble1.82f44e80.png");
+  background-image: image-set("scribble1.a3953a81.png" 1x, "scribble1.aea295c7.png" 2x);
+}
+
+@keyframes shadow_change {
+  to {
+    text-shadow: 1px 0 5px #fff;
+    color: #fff;
+  }
 }
 
 .link {
   color: #fdfdfd;
+  border-bottom: 1px solid #fdfdfd;
+  text-decoration: none;
+  transition: all .5s ease-out;
 }
 
 .link:hover {
+  color: #fdfdfd;
+  border-bottom: 5px solid #fdfdfd;
+}
+
+.link--pink {
+  border-bottom: 1px solid #c64668;
+}
+
+.link--pink:hover {
+  color: #c64668;
+  border-bottom: 5px solid #c64668;
+}
+
+.link--orange {
+  border-bottom: 1px solid #ef9443;
+}
+
+.link--orange:hover {
   color: #ef9443;
+  border-bottom: 5px solid #ef9443;
+}
+
+.link--green {
+  border-bottom: 1px solid #2d5d26;
+}
+
+.link--green:hover {
+  color: #2d5d26;
+  border-bottom: 5px solid #2d5d26;
+}
+
+.link--yellow {
+  border-bottom: 1px solid #bcb245;
+}
+
+.link--yellow:hover {
+  color: #bcb245;
+  border-bottom: 5px solid #bcb245;
 }
 
 .slider {

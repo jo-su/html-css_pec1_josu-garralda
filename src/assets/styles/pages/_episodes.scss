@@ -42,7 +42,7 @@
         background-position: center;
 
         :hover > & {
-            background-image: url(/src/assets/images/scribble-vertical-long.png);
+            background-image: image-set(url(/src/assets/images/scribble-vertical-long.png?width=30&quality=75) 1x, url(/src/assets/images/scribble-vertical-long.png?width=60) 2x);
         }
     
         @media screen and (min-width: $screen-md-min) {
@@ -72,7 +72,7 @@
         background-position: center;
 
         :hover > & {
-            background-image: url(/src/assets/images/scribble-big.png);
+            background-image: image-set(url(/src/assets/images/scribble-vertical-long.png?width=100&quality=75) 1x, url(/src/assets/images/scribble-vertical-long.png?width=200) 2x);
         }
     
         @media screen and (min-width: $screen-md-min) {

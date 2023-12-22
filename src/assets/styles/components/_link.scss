@@ -1,9 +1,50 @@
 .link{
     color: $white;
+    text-decoration: none;
+    border-bottom: 1px solid $white;
+    transition: all 0.5s ease-out;
 
     &:hover{
-        color: $orange;
+        color: $white;
+        border-bottom: 5px solid $white;
     }
+
+    &--pink{
+        border-bottom: 1px solid $pink;
+
+        &:hover{
+            color: $pink;
+            border-bottom: 5px solid $pink;
+        }
+    }
+
+    &--orange{
+        border-bottom: 1px solid $orange;
+
+        &:hover{
+            color: $orange;
+            border-bottom: 5px solid $orange;
+        }
+    }
+
+    &--green{
+        border-bottom: 1px solid $green;
+
+        &:hover{
+            color: $green;
+            border-bottom: 5px solid $green;
+        }
+    }
+
+    &--yellow{
+        border-bottom: 1px solid $yellow;
+
+        &:hover{
+            color: $yellow;
+            border-bottom: 5px solid $yellow;
+        }
+    }
+    
 }
 
 

@@ -19,7 +19,8 @@
     "npm-run-all": "^4.1.5",
     "parcel": "^2.10.3",
     "posthtml-include": "^1.7.4",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "sharp": "^0.31.3"
   },
   "dependencies": {
     "feather-icons": "^4.29.1",

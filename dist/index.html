@@ -8,8 +8,12 @@
   </head>
   <body>
     <header class="header">
-    <a class="button" href="/index.html">
-        <h1 class="header_logo"> la Mesías </h1>
+    
+    <a class="button header_logo logo" href="/index.html">
+        <svg class="logo_svg">
+            <use xlink:href="/sign-language.16e6878a.svg#hand-icon"></use>
+        </svg>
+        <h1 class="logo_title"> la Mesías </h1>
     </a>
     <nav>
         <ul class="nav header_nav">
@@ -34,7 +38,7 @@
         <h2>Ella es el principio y el fin</h2>
       </section>
       <div class="video">
-        <video autoplay="" muted="" loop="" id="home-video" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/09/la-mesias-video.mp4?_=1"></video>
+        <video autoplay="" muted="" loop="" id="home-video" class="cross-clip-animation" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/09/la-mesias-video.mp4?_=1"></video>
         <button id="home-video-sound" class="button button--icon button--bigger video__corner-button">
           <i data-feather="volume-2"></i>
         </button>
@@ -42,10 +46,17 @@
     </main>
        
     <footer class="footer">
+    <svg class="logo_svg">
+        <use xlink:href="/sign-language.16e6878a.svg#hand-icon"></use>
+    </svg>
     <img class="footer_left" id="flower" src="/flower.b7e43a76.png">
     <img class="footer_right" id="alien" src="/alien.aac149b7.png">
-    <p>Una serie de Javier Ambrossi & Javier Calvo</p>
-    <p>para Movistar Plus+</p>
+    <p>Una serie de Javier Ambrossi & Javier Calvo para Movistar Plus+</p>
+    <ul class="footer_nav">
+        <li><a class="link link--green" href="/episodios.html">Episodios</a></li>
+        <li><a class="link link--yellow" href="/sobre_la_serie.html">Sobre la serie</a></li>
+        <li><a class="link link--pink" href="/enlaces.html">Enlaces</a></li>
+    </ul>
     <hr>
     <p>Ejercicio realizado dentro del marco de la asignatura Herramientas</p>
     <p>HTML y CSS del Máster en Desarrollo de Sitios y Aplicaciones Web</p>

@@ -10,7 +10,7 @@
     &--icon{
         padding: 0.25rem;
         background-size: contain;
-        background-image: url(/src/assets/images/scribble-icon.png);
+        background-image: image-set(url(/src/assets/images/scribble-icon.png?width=70&quality=75) 1x, url(/src/assets/images/scribble-icon.png?width=70) 2x);
     }
 
     &--bigger{
@@ -19,28 +19,34 @@
 
     &--pink{
         background-size: contain;
-        background-image: url(/src/assets/images/pink1.png);
+        background-image: image-set(url(/src/assets/images/pink1.png?width=700&quality=75) 1x, url(/src/assets/images/pink1.png?width=700) 2x);
 
         &:hover{
-            background-image: url(/src/assets/images/pink1-2.png);
+            background-image: image-set(url(/src/assets/images/pink1-2.png?width=700&quality=75) 1x, url(/src/assets/images/pink1-2.png?width=700) 2x);
+            animation: shadow_change 1s infinite alternate;
+            color: $pink;
         }
     }
 
     &--yellow{
         background-size: contain;
-        background-image: url(/src/assets/images/yellow1.png);
+        background-image: image-set(url(/src/assets/images/yellow1.png?width=700&quality=75) 1x, url(/src/assets/images/yellow1.png?width=700) 2x);
 
         &:hover{
-            background-image: url(/src/assets/images/yellow1-2.png);
+            background-image: image-set(url(/src/assets/images/yellow1-2.png?width=700&quality=75) 1x, url(/src/assets/images/yellow1-2.png?width=700) 2x);
+            animation: shadow_change 1s infinite alternate;
+            color: $yellow;
         }
     }
 
     &--green{
         background-size: contain;
-        background-image: url(/src/assets/images/green1.png);
+        background-image: image-set(url(/src/assets/images/green1.png?width=700&quality=75) 1x, url(/src/assets/images/green1.png?width=700) 2x);
 
         &:hover{
-            background-image: url(/src/assets/images/green1-2.png);
+            background-image: image-set(url(/src/assets/images/green1-2.png?width=700&quality=75) 1x, url(/src/assets/images/green1-2.png?width=700) 2x);
+            animation: shadow_change 1s infinite alternate;
+            color: $green;
         }
     }
 }
@@ -57,6 +63,13 @@
     font-size: 1.5rem; 
 
     &:hover{
-        background-image: url(/src/assets/images/scribble1.png);
+        background-image: image-set(url(/src/assets/images/scribble1.png?width=700&quality=75) 1x, url(/src/assets/images/scribble1.png?width=700) 2x);
+    }
+}
+
+@keyframes shadow_change {
+    to { 
+        text-shadow: white 1px 0 5px;
+        color: white;
     }
 }

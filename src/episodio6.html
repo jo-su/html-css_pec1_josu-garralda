@@ -12,10 +12,15 @@
       <h2 class="main_title">Episodio 6</h2>
       <div class="card episode-detail">
         <div class="episode-card episode-detail__image">
-          <img class="episode-card_img" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/11/la-mesias-episodio-6-5-scaled.jpg">
-            <p class="episode-card_number">6</p>
-            <p class="episode-card_name">La cara de mi madre</p>
-          </img>
+          <picture>
+            <source media="(max-width: 700px)" type="image/webp" srcset="./assets/images/episodios/6-cropped.jpg?as=webp&quality=50, ./assets/images/episodios/6-cropped.jpg?as=webp 2x">
+            <source media="(max-width: 700px)" srcset="./assets/images/episodios/6-cropped.jpg?quality=50, ./assets/images/episodios/6-cropped.jpg 2x">
+            <source type="image/webp" srcset="./assets/images/episodios/6.jpg?as=webp&quality=50, ./assets/images/episodios/6.jpg?as=webp 2x">
+            <img class="episode-card_img" srcset="./assets/images/episodios/6.jpg?quality=50, ./assets/images/episodios/6.jpg 2x" alt="portada episodio">
+              <p class="episode-card_number">6</p>
+              <p class="episode-card_name">La cara de mi madre</p>
+            </img>
+          </picture>
         </div>
         <p class="episode-detail__description">Irene, la hermana de Enric, vive su anodino día a día hasta que una pintada en la pared de su trabajo pone su mundo patas arriba, haciéndole revivir el pasado que tanto se había esforzado por enterrar.</p>
         <p class="episode-detail__duration">66'</p>
@@ -39,34 +44,7 @@
           7
         </a>
       </div>
-      <section class="section">
-        <h3 class="section_title">Imágenes</h3>
-        <div class="slider">
-          <div class="keen-slider" id="slider-imagenes">
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_2192_carlaoset-2-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1696_carlaoset-1-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1459_carlaoset-1-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220929__DSC4461_sophiekoehler-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220902_DSC9327_sophiekoehler-scaled.jpg">
-            </div>
-          </div>
-          <button id="slider-imagenes-prev" class="button button--icon slider__button slider__button--prev">
-            <i data-feather="arrow-left"></i>
-          </button>
-          <button id="slider-imagenes-next" class="button button--icon slider__button slider__button--next">
-            <i data-feather="arrow-right"></i>
-          </button>
-        </div>
-      </section>
+      <include src="./views/episodio-carrusel.html"></include>
     </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>

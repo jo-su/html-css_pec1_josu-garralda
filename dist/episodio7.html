@@ -8,8 +8,12 @@
   </head>
   <body>
     <header class="header">
-    <a class="button" href="/index.html">
-        <h1 class="header_logo"> la Mesías </h1>
+    
+    <a class="button header_logo logo" href="/index.html">
+        <svg class="logo_svg">
+            <use xlink:href="/sign-language.16e6878a.svg#hand-icon"></use>
+        </svg>
+        <h1 class="logo_title"> la Mesías </h1>
     </a>
     <nav>
         <ul class="nav header_nav">
@@ -34,6 +38,15 @@
             <p class="episode-card_number">7</p>
             <p class="episode-card_name">Wonderland</p>
           
+          <picture>
+            <source media="(max-width: 700px)" type="image/webp" srcset="/7-cropped.db66cf13.webp, /7-cropped.f645ce95.webp 2x">
+            <source media="(max-width: 700px)" srcset="/7-cropped.34f64cd4.jpeg, /7-cropped.51b73071.jpg 2x">
+            <source type="image/webp" srcset="/7.b388f4f6.webp, /7.e95744b4.webp 2x">
+            <img class="episode-card_img" srcset="/7.1ed025e0.jpeg, /7.7a27ea50.jpg 2x" alt="portada episodio">
+              <p class="episode-card_number">7</p>
+              <p class="episode-card_name">Wonderland</p>
+            
+          </picture>
         </div>
         <p class="episode-detail__description">Irene, la hermana de Enric, vive su anodino día a día hasta que una pintada en la pared de su trabajo pone su mundo patas arriba, haciéndole revivir el pasado que tanto se había esforzado por enterrar.</p>
         <p class="episode-detail__duration">66'</p>
@@ -55,39 +68,55 @@
         </a>
       </div>
       <section class="section">
-        <h3 class="section_title">Imágenes</h3>
-        <div class="slider">
-          <div class="keen-slider" id="slider-imagenes">
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_2192_carlaoset-2-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1696_carlaoset-1-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220816_1459_carlaoset-1-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220929__DSC4461_sophiekoehler-scaled.jpg">
-            </div>
-            <div class="card keen-slider__slide">
-              <img class="card__image card__image--horizontal" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220902_DSC9327_sophiekoehler-scaled.jpg">
-            </div>
-          </div>
-          <button id="slider-imagenes-prev" class="button button--icon slider__button slider__button--prev">
-            <i data-feather="arrow-left"></i>
-          </button>
-          <button id="slider-imagenes-next" class="button button--icon slider__button slider__button--next">
-            <i data-feather="arrow-right"></i>
-          </button>
+    <h3 class="section_title">Imágenes</h3>
+    <div class="slider">
+      <div class="keen-slider" id="slider-imagenes">
+        <div class="card keen-slider__slide">
+            <picture>
+                <source type="image/webp" srcset="/1.df30522b.webp, /1.b1ebeb4a.webp 2x">
+                <img class="card__image card__image--horizontal" srcset="/1.87bb38de.jpeg, /1.c7a5b686.jpg 2x" alt="imagen episodio">
+            </picture>
         </div>
-      </section>
+        <div class="card keen-slider__slide">
+            <picture>
+                <source type="image/webp" srcset="/2.7fbed5a9.webp, /2.a96f1e8e.webp 2x">
+                <img class="card__image card__image--horizontal" srcset="/2.fbbf3fb2.jpeg, /2.8caff4f2.jpg 2x" alt="imagen episodio">
+            </picture>
+        </div>
+        <div class="card keen-slider__slide">
+            <picture>
+                <source type="image/webp" srcset="/3.a01039a9.webp, /3.6c275bbf.webp 2x">
+                <img class="card__image card__image--horizontal" srcset="/3.15e9d3e1.jpeg, /3.ba063f4c.jpg 2x" alt="imagen episodio">
+            </picture>
+        </div>
+        <div class="card keen-slider__slide">
+            <picture>
+                <source type="image/webp" srcset="/4.7a89009e.webp, /4.fa1f4a48.webp 2x">
+                <img class="card__image card__image--horizontal" srcset="/4.23b05fc6.jpeg, /4.6c13bb99.jpg 2x" alt="imagen episodio">
+            </picture>
+        </div>
+      </div>
+      <button id="slider-imagenes-prev" class="button button--icon slider__button slider__button--prev">
+        <i data-feather="arrow-left"></i>
+      </button>
+      <button id="slider-imagenes-next" class="button button--icon slider__button slider__button--next">
+        <i data-feather="arrow-right"></i>
+      </button>
+    </div>
+  </section>
     </main>
     <footer class="footer">
+    <svg class="logo_svg">
+        <use xlink:href="/sign-language.16e6878a.svg#hand-icon"></use>
+    </svg>
     <img class="footer_left" id="flower" src="/flower.b7e43a76.png">
     <img class="footer_right" id="alien" src="/alien.aac149b7.png">
-    <p>Una serie de Javier Ambrossi & Javier Calvo</p>
-    <p>para Movistar Plus+</p>
+    <p>Una serie de Javier Ambrossi & Javier Calvo para Movistar Plus+</p>
+    <ul class="footer_nav">
+        <li><a class="link link--green" href="/episodios.html">Episodios</a></li>
+        <li><a class="link link--yellow" href="/sobre_la_serie.html">Sobre la serie</a></li>
+        <li><a class="link link--pink" href="/enlaces.html">Enlaces</a></li>
+    </ul>
     <hr>
     <p>Ejercicio realizado dentro del marco de la asignatura Herramientas</p>
     <p>HTML y CSS del Máster en Desarrollo de Sitios y Aplicaciones Web</p>

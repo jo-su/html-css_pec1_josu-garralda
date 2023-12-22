@@ -8,6 +8,14 @@
         margin-bottom: 0;
     }
 
+    &_nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
     &_left{
         position: fixed;
         width: calc(4rem + 3vw);

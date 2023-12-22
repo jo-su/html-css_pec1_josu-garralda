@@ -10,6 +10,7 @@
     <include src="./views/header.html"></include>
     <main class="main">
       <h2 class="main_title">Sobre la serie</h2>
+      <include src="./views/scribble-svg.html"></include>
       <section class="section">
         <h3 class="section_title">Sinopsis</h3>
         <p>El vídeo viral de un grupo de música pop cristiana compuesto por varias hermanas impacta en la vida de Enric, un hombre atormentado por una infancia marcada por el fanatismo religioso y el yugo de una madre con delirios mesiánicos.</p>
@@ -22,35 +23,59 @@
         <div class="slider">
           <div class="keen-slider" id="slider-reparto">
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Macarena_Garc%C3%ADa_at_Premios_Goya_2017_%28cropped%29.jpg/640px-Macarena_Garc%C3%ADa_at_Premios_Goya_2017_%28cropped%29.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/maca.jpg?as=webp"  srcset="./assets/images/cast/maca.jpg?as=webp&width=100 100w, ./assets/images/cast/maca.jpg?as=webp&width=200 200w, ./assets/images/cast/maca.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/maca.jpg"  srcset="./assets/images/cast/maca.jpg?width=100 100w, ./assets/images/cast/maca.jpg?width=200 200w, ./assets/images/cast/maca.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Macarena García</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Roger_Casamajor%2C_XIV_Premis_Gaud%C3%AD_%282022%29.jpg/640px-Roger_Casamajor%2C_XIV_Premis_Gaud%C3%AD_%282022%29.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/roger.jpg?as=webp"  srcset="./assets/images/cast/roger.jpg?as=webp&width=100 100w, ./assets/images/cast/roger.jpg?as=webp&width=200 200w, ./assets/images/cast/roger.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/roger.jpg"  srcset="./assets/images/cast/roger.jpg?width=100 100w, ./assets/images/cast/roger.jpg?width=200 200w, ./assets/images/cast/roger.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Roger Casamajor</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lola_Duenas_Cabourg_2013.jpg/640px-Lola_Duenas_Cabourg_2013.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/lola.jpg?as=webp"  srcset="./assets/images/cast/lola.jpg?as=webp&width=100 100w, ./assets/images/cast/lola.jpg?as=webp&width=200 200w, ./assets/images/cast/lola.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/lola.jpg"  srcset="./assets/images/cast/lola.jpg?width=100 100w, ./assets/images/cast/lola.jpg?width=200 200w, ./assets/images/cast/lola.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Lola Dueñas</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Carmen_Machi%2C_Festival_de_Sitges_2017.jpg/640px-Carmen_Machi%2C_Festival_de_Sitges_2017.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/carmen.jpg?as=webp"  srcset="./assets/images/cast/carmen.jpg?as=webp&width=100 100w, ./assets/images/cast/carmen.jpg?as=webp&width=200 200w, ./assets/images/cast/carmen.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/carmen.jpg"  srcset="./assets/images/cast/carmen.jpg?width=100 100w, ./assets/images/cast/carmen.jpg?width=200 200w, ./assets/images/cast/carmen.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Carmen Machi</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://comunicacion.movistarplus.es/wp-content/uploads/2023/10/LAMESIAS_EP01_T01_STILL_20220902_DSC9327_sophiekoehler-scaled.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/episodios/1.jpg"  srcset="./assets/images/episodios/1.jpg?as=webp&width=100 100w, ./assets/images/episodios/1.jpg?as=webp&width=200 200w, ./assets/images/episodios/1.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/episodios/1.jpg"  srcset="./assets/images/episodios/1.jpg?width=200 200w, ./assets/images/episodios/1.jpg?width=300 300w, ./assets/images/episodios/1.jpg?width=400 400w">
+              </picture>
               <h3 class="card__title">Ana Rujas</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Albert_Pla%2C_XII_Premis_Gaud%C3%AD_%282020%29.jpg/640px-Albert_Pla%2C_XII_Premis_Gaud%C3%AD_%282020%29.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/albert.jpg?as=webp"  srcset="./assets/images/cast/albert.jpg?as=webp&width=100 100w, ./assets/images/cast/albert.jpg?as=webp&width=200 200w, ./assets/images/cast/albert.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/albert.jpg"  srcset="./assets/images/cast/albert.jpg?width=100 100w, ./assets/images/cast/albert.jpg?width=200 200w, ./assets/images/cast/albert.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Albert Pla</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Amaia_Romero%2C_XIV_Premis_Gaud%C3%AD_%282022%29.jpg/800px-Amaia_Romero%2C_XIV_Premis_Gaud%C3%AD_%282022%29.jpg?20220312122529">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/amaia.jpg?as=webp"  srcset="./assets/images/cast/amaia.jpg?as=webp&width=100 100w, ./assets/images/cast/amaia.jpg?as=webp&width=200 200w, ./assets/images/cast/amaia.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/amaia.jpg"  srcset="./assets/images/cast/amaia.jpg?width=100 100w, ./assets/images/cast/amaia.jpg?width=200 200w, ./assets/images/cast/amaia.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Amaia</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cecilia_Roth_2014_%28cropped%29.jpg/640px-Cecilia_Roth_2014_%28cropped%29.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/cecilia.jpg?as=webp"  srcset="./assets/images/cast/cecilia.jpg?as=webp&width=100 100w, ./assets/images/cast/cecilia.jpg?as=webp&width=200 200w, ./assets/images/cast/cecilia.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/cecilia.jpg"  srcset="./assets/images/cast/cecilia.jpg?width=100 100w, ./assets/images/cast/cecilia.jpg?width=200 200w, ./assets/images/cast/cecilia.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Cecilia Roth</h3>
             </div>
           </div>
@@ -67,11 +92,17 @@
         <div class="slider">
           <div class="keen-slider" id="slider-direccion">
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Javier_Ambrossi.jpg?20180922191713">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/javiambrossi.jpg?as=webp"  srcset="./assets/images/cast/javiambrossi.jpg?as=webp&width=100 100w, ./assets/images/cast/javiambrossi.jpg?as=webp&width=200 200w, ./assets/images/cast/javiambrossi.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/javiambrossi.jpg"  srcset="./assets/images/cast/javiambrossi.jpg?width=100 100w, ./assets/images/cast/javiambrossi.jpg?width=200 200w, ./assets/images/cast/javiambrossi.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Javier Ambrossi</h3>
             </div>
             <div class="card keen-slider__slide">
-              <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Javier_Calvo.jpg/640px-Javier_Calvo.jpg">
+              <picture>
+                <source type="image/webp" src="./assets/images/cast/javicalvo.jpg?as=webp"  srcset="./assets/images/cast/javicalvo.jpg?as=webp&width=100 100w, ./assets/images/cast/javicalvo.jpg?as=webp&width=200 200w, ./assets/images/cast/javicalvo.jpg?as=webp&width=300 300w">
+                <img class="card__image" alt="cast" src="./assets/images/cast/javicalvo.jpg"  srcset="./assets/images/cast/javicalvo.jpg?width=100 100w, ./assets/images/cast/javicalvo.jpg?width=200 200w, ./assets/images/cast/javicalvo.jpg?width=300 300w">
+              </picture>
               <h3 class="card__title">Javier Calvo</h3>
             </div>
           </div>
