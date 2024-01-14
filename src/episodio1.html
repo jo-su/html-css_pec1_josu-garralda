@@ -16,7 +16,7 @@
             <source media="(max-width: 700px)" type="image/webp" srcset="./assets/images/episodios/1-cropped.jpg?as=webp&quality=50, ./assets/images/episodios/1-cropped.jpg?as=webp 2x">
             <source media="(max-width: 700px)" srcset="./assets/images/episodios/1-cropped.jpg?quality=50, ./assets/images/episodios/1-cropped.jpg 2x">
             <source type="image/webp" srcset="./assets/images/episodios/1.jpg?as=webp&quality=50, ./assets/images/episodios/1.jpg?as=webp 2x">
-            <img class="episode-card_img" srcset="./assets/images/episodios/1.jpg?quality=50, ./assets/images/episodios/1.jpg 2x" alt="portada episodio">
+            <img loading="lazy" episode-card_img" srcset="./assets/images/episodios/1.jpg?quality=50, ./assets/images/episodios/1.jpg 2x" alt="portada episodio">
               <p class="episode-card_number">1</p>
               <p class="episode-card_name">Montserrat</p>
             </img>
@@ -44,6 +44,6 @@
       <include src="./views/episodio-carrusel.html"></include>
     </main>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
+    <script async type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
