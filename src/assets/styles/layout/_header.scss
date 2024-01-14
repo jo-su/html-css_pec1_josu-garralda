@@ -23,14 +23,14 @@
         align-items: center;
         font-size: min(calc(2rem + 3vw), 5rem);
         line-height: min(calc(2rem + 3vw), 5rem);
-        background-image: image-set(url(/src/assets/images/scribble1-2.png?width=100&quality=75) 1x, url(/src/assets/images/scribble1-2.png?width=200) 2x);
+        background-image: image-set(url(/src/assets/images/scribble1-2.png?width=100&quality=75) 1x, url(/src/assets/images/scribble1-2.png?width=100) 2x);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         z-index: 300;
 
         &:hover{
-            background-image: image-set(url(/src/assets/images/scribble1.png?width=100&quality=75) 1x, url(/src/assets/images/scribble1.png?width=200) 2x);
+            background-image: image-set(url(/src/assets/images/scribble1.png?width=100&quality=75) 1x, url(/src/assets/images/scribble1.png?width=100) 2x);
         }
     }
 

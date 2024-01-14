@@ -42,7 +42,7 @@
         background-position: center;
 
         :hover > & {
-            background-image: image-set(url(/src/assets/images/scribble-vertical-long.png?width=30&quality=75) 1x, url(/src/assets/images/scribble-vertical-long.png?width=60) 2x);
+            background-image: image-set(url(/src/assets/images/scribble-vertical-long.png?width=30&quality=75) 1x, url(/src/assets/images/scribble-vertical-long.png?width=30) 2x);
         }
     
         @media screen and (min-width: $screen-md-min) {

@@ -19,10 +19,10 @@
 
     &--pink{
         background-size: contain;
-        background-image: image-set(url(/src/assets/images/pink1.png?width=700&quality=75) 1x, url(/src/assets/images/pink1.png?width=700) 2x);
+        background-image: image-set(url(/src/assets/images/pink1.png?width=400&quality=75) 1x, url(/src/assets/images/pink1.png?width=400) 2x);
 
         &:hover{
-            background-image: image-set(url(/src/assets/images/pink1-2.png?width=700&quality=75) 1x, url(/src/assets/images/pink1-2.png?width=700) 2x);
+            background-image: image-set(url(/src/assets/images/pink1-2.png?width=400&quality=75) 1x, url(/src/assets/images/pink1-2.png?width=400) 2x);
             animation: shadow_change 1s infinite alternate;
             color: $pink;
         }
@@ -30,10 +30,10 @@
 
     &--yellow{
         background-size: contain;
-        background-image: image-set(url(/src/assets/images/yellow1.png?width=700&quality=75) 1x, url(/src/assets/images/yellow1.png?width=700) 2x);
+        background-image: image-set(url(/src/assets/images/yellow1.png?width=400&quality=75) 1x, url(/src/assets/images/yellow1.png?width=400) 2x);
 
         &:hover{
-            background-image: image-set(url(/src/assets/images/yellow1-2.png?width=700&quality=75) 1x, url(/src/assets/images/yellow1-2.png?width=700) 2x);
+            background-image: image-set(url(/src/assets/images/yellow1-2.png?width=400&quality=75) 1x, url(/src/assets/images/yellow1-2.png?width=400) 2x);
             animation: shadow_change 1s infinite alternate;
             color: $yellow;
         }
@@ -41,10 +41,10 @@
 
     &--green{
         background-size: contain;
-        background-image: image-set(url(/src/assets/images/green1.png?width=700&quality=75) 1x, url(/src/assets/images/green1.png?width=700) 2x);
+        background-image: image-set(url(/src/assets/images/green1.png?width=400&quality=75) 1x, url(/src/assets/images/green1.png?width=400) 2x);
 
         &:hover{
-            background-image: image-set(url(/src/assets/images/green1-2.png?width=700&quality=75) 1x, url(/src/assets/images/green1-2.png?width=700) 2x);
+            background-image: image-set(url(/src/assets/images/green1-2.png?width=400&quality=75) 1x, url(/src/assets/images/green1-2.png?width=400) 2x);
             animation: shadow_change 1s infinite alternate;
             color: $green;
         }
@@ -63,7 +63,7 @@
     font-size: 1.5rem; 
 
     &:hover{
-        background-image: image-set(url(/src/assets/images/scribble1.png?width=700&quality=75) 1x, url(/src/assets/images/scribble1.png?width=700) 2x);
+        background-image: image-set(url(/src/assets/images/scribble1.png?width=400&quality=75) 1x, url(/src/assets/images/scribble1.png?width=400) 2x);
     }
 }
 
