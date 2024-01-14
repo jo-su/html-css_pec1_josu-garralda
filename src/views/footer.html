@@ -2,8 +2,14 @@
     <svg class="logo_svg">
         <use xlink:href="./assets/images/sign-language.svg#hand-icon"></use>
     </svg>
-    <img class="footer_left" id="flower" src="/src/assets/images/flower.png">
-    <img class="footer_right" id="alien" src="/src/assets/images/alien.png">
+    <picture>
+        <source type="image/webp" srcset="./assets/images/flower.png?as=webp&width=150">
+        <img class="footer_left" id="flower" src="/src/assets/images/flower.png?width=150">
+    </picture>
+    <picture>
+        <source type="image/webp" srcset="./assets/images/alien.png?as=webp&width=150">
+        <img class="footer_right" id="alien" src="/src/assets/images/alien.png?width=150">
+    </picture>
     <p>Una serie de Javier Ambrossi & Javier Calvo para Movistar Plus+</p>
     <ul class="footer_nav">
         <li><a class="link link--green" href="./episodios.html">Episodios</a></li>
