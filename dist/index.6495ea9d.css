@@ -73,7 +73,7 @@ hr {
 
 .header_logo {
   z-index: 300;
-  background-image: image-set("scribble1-2.692ced60.png" 1x, "scribble1-2.473891ca.png" 2x);
+  background-image: image-set("scribble1-2.692ced60.png" 1x, "scribble1-2.192f333a.png" 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -85,7 +85,7 @@ hr {
 }
 
 .header_logo:hover {
-  background-image: image-set("scribble1.0fd82d60.png" 1x, "scribble1.6f948646.png" 2x);
+  background-image: image-set("scribble1.0fd82d60.png" 1x, "scribble1.111cd495.png" 2x);
 }
 
 .logo_svg {
@@ -342,7 +342,7 @@ hr {
 }
 
 :hover > .episode-card_number {
-  background-image: image-set("scribble-vertical-long.0550d987.png" 1x, "scribble-vertical-long.78e3fa93.png" 2x);
+  background-image: image-set("scribble-vertical-long.0550d987.png" 1x, "scribble-vertical-long.2209d989.png" 2x);
 }
 
 @media screen and (width >= 768px) {
@@ -533,7 +533,7 @@ hr {
 }
 
 .button--icon {
-  background-image: image-set("scribble-icon.161c7fc5.png" 1x, "scribble-icon.fd08c021.png" 2x);
+  background-image: image-set("scribble-icon.f393f0de.png" 1x, "scribble-icon.6cec05cf.png" 2x);
   background-size: contain;
   padding: .25rem;
 }
@@ -543,35 +543,35 @@ hr {
 }
 
 .button--pink {
-  background-image: image-set("pink1.78736479.png" 1x, "pink1.b5aded9f.png" 2x);
+  background-image: image-set("pink1.6835867e.png" 1x, "pink1.42c4ccef.png" 2x);
   background-size: contain;
 }
 
 .button--pink:hover {
   color: #c64668;
-  background-image: image-set("pink1-2.452f9992.png" 1x, "pink1-2.7b3be0eb.png" 2x);
+  background-image: image-set("pink1-2.7910f6c6.png" 1x, "pink1-2.3290a7af.png" 2x);
   animation: 1s infinite alternate shadow_change;
 }
 
 .button--yellow {
-  background-image: image-set("yellow1.9bd5e230.png" 1x, "yellow1.4067596e.png" 2x);
+  background-image: image-set("yellow1.8e4a0248.png" 1x, "yellow1.b33a95f1.png" 2x);
   background-size: contain;
 }
 
 .button--yellow:hover {
   color: #bcb245;
-  background-image: image-set("yellow1-2.54eedf74.png" 1x, "yellow1-2.ffd5f0ea.png" 2x);
+  background-image: image-set("yellow1-2.2b69ec74.png" 1x, "yellow1-2.85e89a0e.png" 2x);
   animation: 1s infinite alternate shadow_change;
 }
 
 .button--green {
-  background-image: image-set("green1.b2d7a7b2.png" 1x, "green1.b371456b.png" 2x);
+  background-image: image-set("green1.69e22b30.png" 1x, "green1.2479f861.png" 2x);
   background-size: contain;
 }
 
 .button--green:hover {
   color: #2d5d26;
-  background-image: image-set("green1-2.83faa62c.png" 1x, "green1-2.fd342278.png" 2x);
+  background-image: image-set("green1-2.550df541.png" 1x, "green1-2.5802f6ea.png" 2x);
   animation: 1s infinite alternate shadow_change;
 }
 
@@ -588,7 +588,7 @@ hr {
 }
 
 .button-labeled:hover {
-  background-image: image-set("scribble1.a3953a81.png" 1x, "scribble1.aea295c7.png" 2x);
+  background-image: image-set("scribble1.2f04f667.png" 1x, "scribble1.e7a2a981.png" 2x);
 }
 
 @keyframes shadow_change {
